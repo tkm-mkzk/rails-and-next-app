@@ -10,13 +10,13 @@ $ git clone git@github.com:tkm-mkzk/rails-and-next-app.git
 2. docker イメージをビルドする
 
 ```bash
-$ docker-compose build
+$ docker compose build
 ```
 
 3. コンテナを起動する
 
 ```bash
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 3. ブラウザでアクセスする
@@ -32,9 +32,9 @@ http://localhost:8000
 
 ```bash
 # フロント
-$ docker-compose exec front sh
+$ docker compose exec front sh
 # api
-$ docker-compose exec api bash
+$ docker compose exec api bash
 # railsコンテナから以下コマンドでDBに接続できる
 $ rails dbconsole
 ```
@@ -42,14 +42,14 @@ $ rails dbconsole
 ### eslintの実行
 
 ```bash
-# フロントのコンテナに入ってから
+# frontコンテナに入ってから
 $ yarn lint
 # https://maku.blog/p/dexgg8o/
 ```
 ### jestの実行
 ```bash
-# フロントのコンテナに入ってから
-$ yarn test:ci
+# frontコンテナに入ってから
+$ yarn
 # https://zenn.dev/shootacean/articles/how-to-set-up-jest-in-a-nextjs-project
 ```
 ### rubocopの実行（自動整形含む）
