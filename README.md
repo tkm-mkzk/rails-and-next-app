@@ -19,12 +19,32 @@ $ docker compose build
 $ docker compose up -d
 ```
 
-3. ブラウザでアクセスする
+4. ブラウザでアクセスする
 
 ```bash
 http://localhost:8000
 ```
 <br>
+
+## 初回のみ
+
+1. apiコンテナに入る
+
+```bash
+$ docker compose exec api bash
+```
+
+2. データベース作成
+
+```bash
+$ bin/rails db:create
+```
+
+3. マイグレーション
+
+```bash
+$ bin/rails db:migrate
+```
 
 ## 使用するコマンド
 ---
