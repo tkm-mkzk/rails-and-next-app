@@ -69,7 +69,7 @@ $ yarn lint
 ### jestの実行
 ```bash
 # frontコンテナに入ってから
-$ yarn
+$ yarn test
 # https://zenn.dev/shootacean/articles/how-to-set-up-jest-in-a-nextjs-project
 ```
 ### rubocopの実行（自動整形含む）
