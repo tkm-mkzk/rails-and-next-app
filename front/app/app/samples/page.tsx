@@ -6,7 +6,7 @@ export default function Samples() {
       const res = await fetch('http://localhost:3000/samples')
       console.log(res)
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   }
 
